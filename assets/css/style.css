@@ -1,0 +1,31 @@
+body{
+    background-color: #cecece;
+}
+
+.interface{
+    width: 1170px;
+    margin: auto;
+}
+
+header{
+    background-color: #fff;
+}
+
+header nav img{
+    display: inline-block;
+}
+
+header nav ul{
+    display: inline-block;
+    float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
