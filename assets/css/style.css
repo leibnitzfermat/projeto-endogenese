@@ -45,3 +45,135 @@ header nav ul li a{
 header nav ul li a:hover{
     color: darkgrey;
 }
+
+/* sessão home */
+#home{
+    background-image: url(../images/fundo-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home main{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;    
+}
+
+#home main div{
+    margin: auto 20px;
+    justify-content: ;
+}
+
+#home h1{
+    color: #fff;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#home p{
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+}
+
+/* sessão sobre*/
+
+#sobre{
+    background-color: #fff;
+    color: #282e2b;
+}
+
+#sobre main div.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+#sobre main div.conteudo div{
+    margin: 20px;
+}
+
+#sobre h1{
+    font-size: 20pt;
+    margin: 20px 0 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#sobre div.titulo div.borda{
+    background-color: #282e2b;
+    width: 80px;
+    height: 6px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#sobre p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* sessão portfolio */
+
+#portfolio{
+    background-color: #282e2b;
+    color: #fff;
+}
+
+#portfolio main.interface{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio main.interface div.conteudo{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+#portfolio h1{
+    font-size: 20pt;
+    margin: 20px 0 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#portfolio div.titulo div.borda{
+    background-color: #fff;
+    width: 80px;
+    height: 6px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#portfolio div.conteudo figure{
+    background-color: #fff;
+    color: #282e2b;
+    border-radius: 10px;
+}
+
+#portfolio div.conteudo figure img{
+    border-radius: 10px;
+}
+
+#portfolio div.conteudo figure figcaption{
+    padding: 5px 0;
+}
+
+
+#portfolio div.conteudo figure figcaption h2{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#portfolio div.conteudo figure figcaption p{
+    margin: 0;
+    text-align: center;
+}
