@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #cecece;
+    background-color: #fff;
     margin: 0%;
 }
 
@@ -108,6 +108,11 @@ header nav ul li a:hover{
     height: 6px;
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: 1500ms all;
+}
+
+#sobre div.titulo div.borda:hover{
+    transform: translateX(200px);
 }
 
 #sobre p{
@@ -116,7 +121,6 @@ header nav ul li a:hover{
 }
 
 /* sessão portfolio */
-
 #portfolio{
     background-color: #282e2b;
     color: #fff;
@@ -176,4 +180,177 @@ header nav ul li a:hover{
 #portfolio div.conteudo figure figcaption p{
     margin: 0;
     text-align: center;
+}
+
+/* FLIP */
+
+.flip-card{
+    width: 300px;
+    height: 450px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(-180deg);
+}
+
+.flip-card .flip-card-back{
+    transform: rotateY(-180deg);
+}
+
+.flip-card-inner{
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+}
+/* FLIP end */
+
+/* sessão equipe */
+#equipe{
+    background-color: #fff;
+    color: #282e2b;
+}
+
+#equie main.interface{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#equipe h1{
+    font-size: 20pt;
+    margin: 20px 0 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#equipe div.titulo div.borda{
+    background-color: #282e2b;
+    width: 80px;
+    height: 6px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#equipe main.interface div.conteudo{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+#equipe main.interface div.conteudo figure{
+    padding: 2px 30px;
+    margin: 5px;
+    border: 1px solid #cecece;
+    border-bottom: 4px solid green;
+    margin-bottom: 20px;
+}
+
+#equipe main.interface div.conteudo figcaption h2{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+#equipe main.interface div.conteudo figcaption p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12pt;
+    margin: 0;
+    margin-bottom: auto;
+}
+
+/* sessão contato */
+
+#contato{
+    background-image: url("../images/fundo-contato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#contato main.interface{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato main.interface div.titulo h1{
+    font-size: 30px;
+    margin: 20px 0 0;font-weight: bold;
+    text-transform: uppercase;
+}
+
+#contato div.titulo div.borda{
+    background-color: #fff;
+    width: 80px;
+    height: 6px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#contato main.interface div.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contato main.interface div.map div#mapa{
+    background-color: #cecece;
+    width: 100%;
+    height: 350px;
+}
+
+#contato main.interface div.conteudo div.formulario{
+    width: 400px;
+    margin-left: 10px;
+}
+
+#contato main.interface div.conteudo form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato main.interface div.conteudo form input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#contato main.interface div.conteudo form textarea{
+    height: 100px;
+}
+
+#contato main.interface div.conteudo form button{
+    width: 100px;
+    font-weight: bold;
+    align-items: end;
+}
+
+/* sessao  footer*/
+
+footer{
+    background-color: #fff;
+    color: black;
+}
+
+footer main{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
